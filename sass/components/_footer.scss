@@ -4,46 +4,99 @@
     background-color: #2F303A;
 
     &__list {
-        display: flex;
+        display: block;
+        text-align: center;
+    
+       @media (min-width: 768px) {
+         display: flex;
+         flex-wrap: wrap;
+    
+        }
+        @media (min-width: 1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
     }
 
     &__box1 {
-        margin-right: 87px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+    
+        @media (min-width: 768px) {
+            margin-left: 75px;
+        }
+           @media (min-width: 1200px) {
+               margin-right: 93px;
+               margin-left: 0px;
+               margin-bottom: 0px;
+    
+           }
+
     }
 
     &__logo {
-        display: flex;
+        display: block;
+        
+        @media (min-width: 1200px) {
+            display: flex;
+        }
     }
 
     &__logo-web {
         color: var(--links-buttons-text-color);
         font-family: 'Raleway';
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
+        font-size: 24px;
+        line-height: 1.16;
         letter-spacing: 0.03em;
         text-decoration: none;
+
+       @media (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
     }
 
     &__logo-studio {
         color: #ffff;
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
+        font-size: 24px;
+        line-height: 1.16;
         letter-spacing: 0.03em;
+
+        @media (min-width: 1200px) {
+                font-size: 26px;
+                line-height: 1.19;
+            }
     }
 
     &__adress {
         margin-top: 28px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
         color: #ffff;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         text-decoration: none;
+        text-align: center;
+            
+    
+        @media (min-width: 1200px) {
+           text-align: justify;
+           width: 207px;
+        }
     }
 
+    &__feedback {
+        text-align: center;
+        
+        @media (min-width: 1200px) {
+                text-align: justify;
+            }
+
+    }
     &__mail {
         color: #FFFFFF99;
         font-style: normal;
@@ -64,7 +117,6 @@
 
     &__tel {
         margin-top: 12px;
-        margin-bottom: 60px;
         color: #FFFFFF99;
         font-weight: 400;
         font-size: 14px;
@@ -79,31 +131,58 @@
         &:hover {
             color: var(--links-buttons-text-color);
         }
+                @media (min-width: 1200px) {
+                    margin-bottom: 60px;
+                }
+    }
+    &__tel-item {
+        margin-top: 10px;
     }
 
-    &__subscription {
-        margin-left: auto;
-    }
+}
 
-    &__subscription-description {
-        margin-top: 12px;
-        margin-bottom: 0px;
+.footer-subscription {
+
+    margin-left: auto;
+
+    @media (min-width: 768px) {
+          margin-left: 145px;
+          margin-right: auto;
+        }
+            @media (min-width: 1200px) {
+              margin-left: 94px;
+          }
+
+    &__description {
+        margin-top: 0px;
+        margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
+        text-align: center;
+    
+      @media (min-width: 1200px) {
+           margin-top: 12px;
+           margin-bottom: 0px;
+           text-align: justify;
+        }
     }
 
     &__form {
-        display: flex;
+        display: block;
+    
+      @media (min-width: 1200px) {
+            display: flex;
+        }
     }
 
     &__form-input {
-        width: 358px;
+        width: 450px;
         height: 50px;
-        margin-top: 20px;
+        margin-bottom: 20px;
         padding-left: 16px;
         color: #FFFF;
         background-color: #2F303A;
@@ -122,13 +201,18 @@
             letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
         }
+
+                @media (min-width: 1200px) {
+                   width: 358px;
+                   margin-bottom: 0px;
+                   margin-top: 20px;
+                }
     }
 
     &__form-button {
         width: 200px;
         height: 50px;
-        margin-top: 20px;
-        margin-left: 12px;
+        margin-left: 125px;
         padding-left: 28px;
         font-style: normal;
         font-weight: 700;
@@ -144,7 +228,11 @@
         border-radius: 4px;
         border: none;
 
+        @media (min-width: 1200px) {
+                margin-top: 20px;
+                margin-left: 12px;
 
+            }
     }
 
     &__form-button {
@@ -159,9 +247,20 @@
 
 .footer-networks {
     display: block;
+    margin-bottom: 60px;
+
+     @media (min-width: 768px) {
+            margin-left: 180px;
+
+    
+        }
+        @media (min-width: 1200px) {
+               margin-left: 0px;
+               margin-top: 10px;
+                }
 
     &__description {
-        margin-top: 12px;
+        margin-top: 0px;
         margin-bottom: 0px;
         font-weight: 700;
         font-size: 14px;
@@ -169,11 +268,21 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFF;
+    
+       @media (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
     &__list {
         display: flex;
         margin-top: 20px;
+        margin-left: 120px;
+    
+      @media (min-width: 768px) {
+         margin-left: 0px;
+    
+        }
     }
 
     &__box {
@@ -186,7 +295,7 @@
         border: none;
         width: 44px;
         height: 44px;
-        color: #AFB1B8;
+        color: #FFFF;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.1);
         transition-property: var(--links-buttons-text-color);
@@ -204,7 +313,7 @@
         border: none;
         width: 44px;
         height: 44px;
-        color: #AFB1B8;
+        color: #ffff;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.1);
         transition-property: var(--links-buttons-text-color);

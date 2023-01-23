@@ -1,6 +1,10 @@
 .section-work {
     padding-bottom: 94px;
 
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
     &__header {
         margin-top: 0px;
         margin-bottom: 50px;
